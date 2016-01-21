@@ -9,8 +9,8 @@ class UsersController < ApplicationController
   end
 
   def create
-  	@user = User.new(user_params)
-  	redirect_to users_path
+  	@user = User.create(user_params)
+  	redirect_to root_path
   end
 
   private

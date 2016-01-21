@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+	validates_uniqueness_of :username
+
 	has_secure_password
 	validates_confirmation_of :password
 	validates_presence_of :password, on: :create

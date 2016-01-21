@@ -5,7 +5,7 @@
 			<h4>Username:</h4> <%= link_to u.username, u %>
 			<h4>First Name:</h4> <%= u.fname %>
 			<h4>Last Name:</h4> <%= u.lname %>
-			<h4>Avatar:</h4><%= image_tag @user.avatar.url(:medium) %>
+			<h4>Avatar:</h4><%= image_tag u.avatar.url(:medium) %>
 		</div>
 	<% end %>
 </div>
