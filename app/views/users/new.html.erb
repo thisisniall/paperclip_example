@@ -1,0 +1,19 @@
+<h1>Sign Up</h1>
+<%= form_for @user do |f|%>
+	<%= f.label :username %>
+	<%= f.text_field :username, :class => "user_input" %>
+	<br>
+	<%= f.label :fname, "First Name" %>
+	<%= f.text_field :fname, :class => "user_input" %>
+	<br>
+	<%= f.label :lname, "Last Name" %>
+	<%= f.text_field :lname, :class => "user_input" %>
+	<br>
+	<%= f.label :password %>
+	<%= f.password_field :password, :class => "user_input" %>
+	<br>
+	<%= f.label :password, "Confirm Password" %>
+	<%= f.password_field :password_confirmation, :class => "user_input" %>
+	<br>
+	<%= f.submit :class => "button" %>
+<% end %>
